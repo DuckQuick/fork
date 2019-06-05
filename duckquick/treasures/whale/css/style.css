@@ -1,0 +1,7 @@
+html, body { height: 100%; width: 100%; margin: 0; cursor:crosshair;}
+#whale {height: 99.5%; width: 100%;}
+footer button{
+    position: fixed;
+    right: 3em;
+    bottom: 3em;
+}

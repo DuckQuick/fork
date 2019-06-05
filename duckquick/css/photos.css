@@ -1,0 +1,14 @@
+
+.photo {
+    margin: 0.5em;
+    border: 0.1em solid #c0c0c0;
+    float: left;
+    width: 20em;
+}
+.photo:hover {
+    border: 0.1em solid #777777;
+}
+.photo img {
+    width: 100%;
+    height: auto;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zn-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <title>Message</title>
+    <link rel="shortcut icon" href="pic/icon_short.png">
+    <!--[if lt IE 9]><![endif]-->
+    <link rel="stylesheet" type="text/css" href="css/message.css">
+    <script src="js/message.js"></script>
+    <!-- live2d -->
+    <link rel="stylesheet" type="text/css" href="live2d/live2d.css">
+    <script src="live2d/js/live2d.min.js"></script>
+    <script src="live2d/live2d.js"></script>
+</head>
+<body onload="InitLive2D()">
+    <!-- 写注释 -->
+    <div>
+        <h1 onselectstart="return false" id="hello"> 你好，我的朋友 </h1>
+    </div>
+    <div class="form">
+        <form action="" name="message-form">
+            <fieldset>
+             <legend align="center">留言板</legend>
+                <label>昵称: <input autofocus type="text" name="name" size="15"></label><br>
+                <label>邮箱: <input type="email" name="email" size="15"></label><br>
+                <label>职业: <select name="profession">
+                    <option value="Student">在校学生</option>
+                    <option value="IT Worker">IT工作者</option>
+                    <option value="Ele enthusiasts">电子爱好者</option>
+                    <option value="Visitor">无名游客</option>
+                    <option value="Other">其它</option>
+                </select></label><br>
+                <textarea class="text-box" name="contents" rows="10" cols="30" maxlength="146" placeholder="你想说些什么..." required></textarea><br>
+                <input type="submit" value="提交" onclick="check()">
+            </fieldset>
+        </form>
+        <!--
+        <iframe hidden name="chick_hid" src="cips.txt" width="500" height="500"></iframe>
+        <p><a href="cips.txt" target="chick_hid">Chick it&#8482;</a></p>
+        -->
+        <!-- live2d -->
+        <div class="live2d-css">
+        <audio id="my_audio"></audio>
+        <p>
+            <button onclick="test()" class="active">小埋我要走了</button>
+            <button onclick="color()" class="active">小埋你的可乐呢</button>
+            <button onclick="colorAndCrisps()" class="active">还有薯片</button>
+        </p>
+        <div>
+            <canvas id="mycanvas" width="200" height="200">
+            </canvas>
+        </div>
+        </div>
+
+        <p><a href="javascript:void(0)">备注</a></p><br>
+    </div>
+    <footer>
+
+    </footer>
+</body>
+</html>

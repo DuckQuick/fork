@@ -1,0 +1,13 @@
+<Files ~ "^.(htaccess|htpasswd)$">
+deny from all
+</Files>
+Options -Indexes
+<FilesMatch ".(gif|jpg|jpeg|png|ico)$">
+Header set Cache-Control "max-age=604800"
+</FilesMatch>
+ErrorDocument 404 /err/404.html
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^(www.duckquick.cn)(:80)? [NC]
+RewriteRule ^(.*) http://duckquick.cn/$1 [R=301,L]
+DirectoryIndex index.html       
+order deny,allow

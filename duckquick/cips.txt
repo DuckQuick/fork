@@ -1,0 +1,75 @@
+笔记:
+
+元素右对齐：
+① float: right;
+② position: absolute;
+    right: 0px;
+居中:
+text-align: center;
+
+padding + border + width= 盒子的宽度
+padding+ border + height = 盒子的高度
+box-sizing:border-box
+
+"first-letter" 伪元素用于向文本的首字母设置特殊样式：
+p:first-letter
+{
+    color:#ff0000;
+    font-size:xx-large;
+}
+
+无边框文本框：
+textarea {
+    border: 0;
+    background-color: transparent;
+    /*scrollbar-arrow-color:yellow;
+    scrollbar-base-color:lightsalmon;
+    overflow: hidden;*/
+    color: #666464;
+    height: auto;
+}
+
+文本框样式：
+<textarea style="border:0;
+border-radius:5px;
+background-color:rgba(241,241,241,.98);
+width: 355px;
+height: 100px;
+padding: 10px;
+resize: none;
+" placeholder="备注">
+</textarea>
+
+元素翻转30度：
+transform:rotate(30deg);
+
+CSS3的background-Origin属性：
+content-box, padding-box,和 border-box
+
+随鼠标旋转的正方形：
+div{
+  width: 200px;
+  height: 200px;
+  background-color: #f00;
+  transition: all 2s;
+}
+div:hover{
+  background-color: #00f;
+  transform: translateX(500px) translateY(500px) scale(1) rotate(360deg);
+}
+
+js提升if else优化:
+const condition = 2
+let obj = {
+  '1' : () => { document.write(1) },
+  '2' : () => { document.write(2) },
+  '3' : () => { document.write(3) },
+}
+obj[condition]()
+
+this 消失：
+<button onclick="this.style.display='none'">
+点我后我就消失了
+</button>
+
+

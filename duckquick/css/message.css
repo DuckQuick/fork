@@ -1,0 +1,49 @@
+
+body{
+    /* background-image:url("2019date.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%; */
+    margin: auto;
+    padding: auto;
+    background: url("pic/01.png") no-repeat fixed;
+    background-size: 100% 100%;
+    font-size: 100%;
+
+    /* cursor: */
+}
+
+.text-box{
+    resize: none;
+    overflow: hidden;
+    text-indent: 2em;
+    /* box-shadow: 10px 10px 5px #008080; */
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+}
+
+.form{
+    text-align: center;
+    width: 20em;
+    margin: 10px auto;
+    padding: 0;
+    /* 0w0 */
+    background: url("pic/06.png");
+    background-repeat: no-repeat;
+    background-size: 80px 80px;
+    background-origin: content-box;
+    background-position: 0 5%;
+}
+
+.form a:link {color: yellow; text-decoration: none;}
+.form a:visited {color: red; text-decoration: none;}
+.form a:hover {color: silver; text-decoration: none;}
+.form a:active {color: yellow; text-decoration: none;}
+.form input:focus {background-color: silver}
+
+#hello{
+    text-align: center;
+    position: sticky;
+    z-index: 1;
+    text-shadow:0.1em 0.1em 0.1em red;
+}
