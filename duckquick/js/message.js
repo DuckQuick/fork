@@ -1,4 +1,4 @@
-
+/*
 function check() {
     let name = document.forms["message-form"]["name"].value;
     let email = document.forms["message-form"]["email"].value;
@@ -19,5 +19,50 @@ function check() {
         alert("提交成功");
     }
 }
+*/
+function CheckRight(input) {
 
+    if(input.type === 'email') {
+        if (!input.value.match(/^\w+@[a-zA-Z0-9]{2,10}(?:\.[a-z]{2,4}){1,3}$/)) {
+
+        }
+        else {
+
+        }
+    }
+}
+
+function EmailAdded(input) {
+    let ipt=input.value;
+    let elt=document.getElementById("EmailList");
+    elt.DataSource="";
+    let k = "@";
+    let EmailList = [
+        {value: "qq.com"},
+        {value: "163.com"},
+        {value: "126.com"},
+        {value: "sohu.com"},
+        {value: "yahoo.com"},
+        {value: "hotmail.com"},
+        {value: "gmail.com"},
+        {value: "googlemail.com"},
+        {value: "msn.com"},
+    ];
+    if(!ipt.match(/@/)){
+        k = "@";
+    }
+    else {
+        k="";
+        EmailList = [
+            {value:""},
+        ];
+    }
+    for(let i=0;i<EmailList.length;i++){
+        let List = EmailList[i];
+        let opt=document.createElement("option");
+        opt.setAttribute("lable",ipt + k + List.value);
+        opt.setAttribute("value",ipt + k + List.value);
+        elt.appendChild(opt);
+    }
+}
 

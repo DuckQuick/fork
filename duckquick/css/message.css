@@ -28,11 +28,6 @@ body{
     margin: 10px auto;
     padding: 0;
     /* 0w0 */
-    background: url("pic/06.png");
-    background-repeat: no-repeat;
-    background-size: 80px 80px;
-    background-origin: content-box;
-    background-position: 0 5%;
 }
 
 .form a:link {color: yellow; text-decoration: none;}
@@ -46,4 +41,14 @@ body{
     position: sticky;
     z-index: 1;
     text-shadow:0.1em 0.1em 0.1em red;
+}
+
+.talk-bubble {
+    position: fixed;
+    overflow: auto;
+    right: 22em;
+    bottom: 12em;
+    width: 12em;
+    height: 4em;
+    background-color: #2E8B57;
 }

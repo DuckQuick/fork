@@ -15,31 +15,36 @@
 <body onload="InitLive2D()">
     <!-- 写注释 -->
     <div>
-        <h1 onselectstart="return false" id="hello"> 你好，我的朋友 </h1>
+        <h1 onselectstart="return false" id="hello"> 偶哈哟，欧尼酱</h1>
     </div>
     <div class="form">
         <form action="" name="message-form">
             <fieldset>
              <legend align="center">留言板</legend>
                 <label>昵称: <input autofocus type="text" name="name" size="15"></label><br>
-                <label>邮箱: <input type="email" name="email" size="15"></label><br>
+                <label>&nbsp;邮箱: <input size="15" list="EmailList" oninput="EmailAdded(this)" onblur="">
+                    <datalist id="EmailList">
+                    </datalist>
+                </label><br>
                 <label>职业: <select name="profession">
                     <option value="Student">在校学生</option>
                     <option value="IT Worker">IT工作者</option>
                     <option value="Ele enthusiasts">电子爱好者</option>
-                    <option value="Visitor">无名游客</option>
+                    <option value="Visitor" selected>无名游客</option>
                     <option value="Other">其它</option>
                 </select></label><br>
-                <textarea class="text-box" name="contents" rows="10" cols="30" maxlength="146" placeholder="你想说些什么..." required></textarea><br>
-                <input type="submit" value="提交" onclick="check()">
+                <textarea class="text-box" name="contents" rows="10" cols="30" maxlength="146" placeholder="请对小埋说些什么吧..." required></textarea><br>
+                <input type="submit" value="打招呼" onclick="check()">
             </fieldset>
         </form>
+    </div>
         <!--
         <iframe hidden name="chick_hid" src="cips.txt" width="500" height="500"></iframe>
         <p><a href="cips.txt" target="chick_hid">Chick it&#8482;</a></p>
         -->
+
         <!-- live2d -->
-        <div class="live2d-css">
+    <div class="live2d-css">
         <audio id="my_audio"></audio>
         <p>
             <button onclick="test()" class="active">小埋我要走了</button>
@@ -50,10 +55,13 @@
             <canvas id="mycanvas" width="200" height="200">
             </canvas>
         </div>
-        </div>
 
-        <p><a href="javascript:void(0)">备注</a></p><br>
     </div>
+    <div class="talk-bubble ">
+        <p>hahaha</p>
+    </div>
+
+
     <footer>
 
     </footer>
