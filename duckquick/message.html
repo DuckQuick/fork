@@ -17,22 +17,21 @@
     <div>
         <h1 onselectstart="return false" id="hello"> 偶哈哟，欧尼酱</h1>
     </div>
-    <div class="form">
-        <form action="" name="message-form">
+    <div class="message-form" align="center">
+        <form action="">
             <fieldset>
              <legend align="center">留言板</legend>
-                <label>昵称: <input autofocus type="text" name="name" size="15"></label><br>
-                <label>&nbsp;邮箱: <input size="15" list="EmailList" oninput="EmailAdded(this)" onblur="">
+                <div class="message-input">昵称: <input autofocus type="text" name="name" size="15" placeholder="主人的名字"></div>
+                <div class="message-input">邮箱: <input type="text" size="15" list="EmailList" placeholder="主人的邮箱" oninput="EmailAdded(this)" onblur=""></div>
                     <datalist id="EmailList">
                     </datalist>
-                </label><br>
-                <label>职业: <select name="profession">
+                <div class="message-input">职业: <label><select name="profession">
                     <option value="Student">在校学生</option>
                     <option value="IT Worker">IT工作者</option>
                     <option value="Ele enthusiasts">电子爱好者</option>
                     <option value="Visitor" selected>无名游客</option>
                     <option value="Other">其它</option>
-                </select></label><br>
+                </select></label></div>
                 <textarea class="text-box" name="contents" rows="10" cols="30" maxlength="146" placeholder="请对小埋说些什么吧..." required></textarea><br>
                 <input type="submit" value="打招呼" onclick="check()">
             </fieldset>
