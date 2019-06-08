@@ -33,17 +33,23 @@ body{
 .message-input {
     background-color: white;
     cursor: auto;
-    padding: 0;
     border: 1px solid #aaaaaa;
     display: inline-block;
     text-align: start;
-    margin: 0;
-    font: 1em Arial;
+    margin:2px 0;
+    font: 15px Arial;
+    height: 16px;
+    line-height: 16px;
 }
 .message-input input, .message-input select{
     border: none;
     outline-style: none;
     background-color: white;
+    height: 14px;
+    font-size: 12px;
+}
+[name=name]{
+    width: 10em;
 }
 .text-box{
     resize: none;
