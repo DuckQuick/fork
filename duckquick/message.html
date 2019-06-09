@@ -22,8 +22,8 @@
             <fieldset>
              <legend align="center">留言板</legend>
                 <div class="message-input">昵称: <input autofocus type="text" name="name" size="15" placeholder="主人的名字"></div>
-                <div class="message-email-input">邮箱: <input type="text" size="15" placeholder="主人的邮箱" oninput="EmailAdded(this)" ><!--onblur="document.getElementById('EmailList').visibility='hidden'" -->
-                    <div class="email-list" id="EmailList"></div>
+                <div class="message-email-input">邮箱: <input id="emailInput" type="text" size="15" placeholder="主人的邮箱" oninput="emailAdded(this)" onblur="document.getElementById('emailList').style.visibility='hidden'">
+                    <div class="email-list" id="emailList"></div>
                 </div>
                 <div class="message-input">身份: <label><select name="profession">
                     <option value="Student">在校学生</option>

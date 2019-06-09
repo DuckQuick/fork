@@ -16,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/message.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="18" column="10" lean-forward="true" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+            <state relative-caret-position="253">
+              <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -64,15 +64,15 @@
         <option value="$PROJECT_DIR$/live2d/live2d.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/main.css" />
-        <option value="$PROJECT_DIR$/message.html" />
         <option value="$PROJECT_DIR$/css/message.css" />
+        <option value="$PROJECT_DIR$/message.html" />
         <option value="$PROJECT_DIR$/js/message.js" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="118" />
-    <option name="y" value="148" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="317" />
+    <option name="y" value="111" />
     <option name="width" value="1555" />
     <option name="height" value="787" />
   </component>
@@ -163,15 +163,15 @@
       <workItem from="1559956373877" duration="11541000" />
       <workItem from="1559967985154" duration="87000" />
       <workItem from="1559968775997" duration="7515000" />
-      <workItem from="1559986690982" duration="14190000" />
+      <workItem from="1559986690982" duration="19532000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="171855000" />
+    <option name="totallyTimeSpent" value="177197000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="95" y="119" width="1244" height="629" extended-state="0" />
+    <frame x="254" y="89" width="1244" height="629" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14165261" />
@@ -409,22 +409,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/message.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="88" column="23" lean-forward="true" selection-start-line="88" selection-start-column="23" selection-end-line="88" selection-end-column="23" />
+        <state relative-caret-position="332">
+          <caret line="101" column="1" lean-forward="true" selection-start-line="101" selection-start-column="1" selection-end-line="101" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/message.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="97" column="13" lean-forward="true" selection-start-line="97" selection-start-column="13" selection-end-line="97" selection-end-column="13" />
+        <state relative-caret-position="23">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/message.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="18" column="10" lean-forward="true" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+        <state relative-caret-position="253">
+          <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
         </state>
       </provider>
     </entry>
