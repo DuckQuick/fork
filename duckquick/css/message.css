@@ -29,27 +29,35 @@ body{
 .form a:active {color: yellow; text-decoration: none;}
 */
 
-.message-input:focus {background-color: silver}
-.message-input {
+.message-input,.message-email-input:focus {background-color: silver}
+.message-input,.message-email-input {
     background-color: white;
     cursor: auto;
     border: 1px solid #aaaaaa;
     display: inline-block;
     text-align: start;
     margin:2px 0;
-    font: 15px Arial;
-    height: 16px;
-    line-height: 16px;
+    font: 18px Arial;
+    height: 20px;
+    line-height: 20px;
 }
-.message-input input, .message-input select{
+.message-input input,.message-email-input input{
     border: none;
     outline-style: none;
     background-color: white;
-    height: 14px;
-    font-size: 12px;
-}
-[name=name]{
+    height: 16px;
+    line-height: 16px;
+    font-size: 14px;
     width: 10em;
+}
+input:-webkit-autofill { box-shadow: 0 0 0 1000px white inset;} /* 自动填充背景为白色 */
+.message-input select{
+    border: none;
+    outline-style: none;
+    background-color: white;
+    height: 16px;
+    line-height: 16px;
+    font-size: 13px;
 }
 .text-box{
     resize: none;
@@ -60,12 +68,32 @@ body{
     filter: alpha(opacity=60);
 }
 
-.talk-bubble {
-    position: fixed;
-    overflow: auto;
-    right: 22em;
-    bottom: 12em;
-    width: 12em;
-    height: 4em;
-    background-color: #2E8B57;
+.message-email-input {position: relative;}
+.email-list {
+    position: absolute;
+    display: none;
+    min-width: 8em;
+    padding: 0.1em 0.2em;
+    left: 2em;
+    background-color: silver;
+    box-shadow: 0 0.5em 1em 0 rgba(0,0,0,0.2);
+    visibility: hidden;
+    z-index: 9999;
+}
+.message-email-input p{
+    margin: 0.4em 0;
+    padding: 0 0.5em;
+    border: none;
+    color: black;
+    font-size: 0.8em;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+/* .message-email-input p::-webkit-scrollbar {display: none;} webkit内核滚动条去除 */
+.message-email-input .email-list {
+    display: block;
+}
+.message-email-input p:hover{
+    background-color: yellow;
+    cursor: pointer;
 }

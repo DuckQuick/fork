@@ -33,11 +33,10 @@ function check() {
 /**
  * @return {boolean}
  */
-function EmailAdded(input) {
+/*function EmailAdded(input) {
     if (Sys.chrome) {
         let ipt = input.value;
         let elt = document.getElementById("EmailList");
-        elt.DataSource = "";
         let k = "@";
         let EmailList = [
             {value: "qq.com"},
@@ -61,12 +60,46 @@ function EmailAdded(input) {
         for (let i = 0; i < EmailList.length; i++) {
             let List = EmailList[i];
             let opt = document.createElement("option");
-            opt.setAttribute("lable", ipt + k);
-            opt.setAttribute("value", ipt);
+            opt.setAttribute("lable", "");
+            opt.setAttribute("value", "");
             elt.appendChild(opt);
-            opt.label += List.value;
-            opt.value += k + List.value;
+            if(opt.value) opt.value="";
+            if(opt.label) opt.label="";
+            opt.label += k + List.value;
+            opt.value += ipt + k + List.value;
         }
-    } else return false;
+    }
 }
-
+*/
+function EmailAdded(input) {
+    let ipt=input.value;
+    let elt = document.getElementById("EmailList");
+    elt.style.visibility = "visible";
+    elt.innerHTML = "";
+    const EmailList = [
+        {value: "qq.com"},
+        {value: "163.com"},
+        {value: "126.com"},
+        {value: "sohu.com"},
+        {value: "yahoo.com"},
+        {value: "hotmail.com"},
+        {value: "gmail.com"},
+        {value: "googlemail.com"},
+        {value: "msn.com"},
+    ];
+    if(ipt && elt.innerHTML === "") {
+        for(let i=0 ; i<EmailList.length; i++) {
+            let List = EmailList[i];
+            let p = document.createElement("p");
+            if(ipt.match(/@/)) {
+                p.innerHTML = ipt + List.value;
+            }else {
+                p.innerHTML = ipt + "@" + List.value;
+            }
+            elt.appendChild(p);
+            if(ipt.match(/@(.+)|[^a-zA-Z0-9@]/)){
+                elt.innerHTML = "";
+            }
+        }
+    }
+}

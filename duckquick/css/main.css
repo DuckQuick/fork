@@ -31,7 +31,7 @@ body {
 .menu-top li a:hover {
     background-color: black;
 }
-.menu-top li.about {
+.menu-top li:last-child {
     float: right;
 }
 
