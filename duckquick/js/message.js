@@ -40,8 +40,19 @@ function emailAdded(input) {
             };
             elt.appendChild(p);
             }
-        }
+
+        /*elt.style.visibility = "hidden";*/
+    }
     if(ipt.match(/@(.+)|[^a-zA-Z0-9@]/)){
         elt.innerHTML = "";
     }
+}
+
+/* Firefox 无法兼容 */
+function emailHidden(){
+    let elt = document.getElementById("emailList");
+    let timeout = setTimeout(function () {
+        if(elt.activeElement !== elt) {elt.style.visibility = "hidden";}
+        else timeout();
+    },200);
 }

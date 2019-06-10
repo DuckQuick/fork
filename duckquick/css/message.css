@@ -37,7 +37,7 @@ body{
     display: inline-block;
     text-align: start;
     margin:2px 0;
-    font: 18px Arial;
+    font: 16px Arial;
     height: 20px;
     line-height: 20px;
 }
@@ -49,15 +49,17 @@ body{
     line-height: 16px;
     font-size: 14px;
     width: 10em;
+    vertical-align: center;
 }
 input:-webkit-autofill { box-shadow: 0 0 0 1000px white inset;} /* 自动填充背景为白色 */
 .message-input select{
     border: none;
     outline-style: none;
     background-color: white;
-    height: 16px;
-    line-height: 16px;
-    font-size: 13px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    vertical-align: center;
 }
 .text-box{
     resize: none;
@@ -78,10 +80,11 @@ input:-webkit-autofill { box-shadow: 0 0 0 1000px white inset;} /* 自动填充�
     background-color: silver;
     box-shadow: 0 0.5em 1em 0 rgba(0,0,0,0.2);
     visibility: hidden;
+    clear: both;
     z-index: 9999;
 }
 .message-email-input p{
-    margin: 0.4em 0;
+    margin: 0.05em 0;
     padding: 0 0.5em;
     border: none;
     color: black;

@@ -2,6 +2,8 @@
   <dictionary name="m1883">
     <words>
       <w>lable</w>
+      <w>timeid</w>
+      <w>timenum</w>
     </words>
   </dictionary>
 </component>
